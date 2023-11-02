@@ -2,38 +2,45 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: #000000;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    background-color: transparent;
+    position: top;
+    overflow: hidden;
 }
 
-header h1 {
-    margin: 0;
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: static;
+    width: 100%;
+    z-index: 1;
+    top: 0;
 }
 
 nav li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 33px;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #fff;
 }
 
 .content {
     max-width: 800px;
-    margin: 20px auto;
+    margin: 140px auto 20px;
     background-color: #fff;
     padding: 20px;
 }
