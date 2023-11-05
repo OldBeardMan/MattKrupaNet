@@ -1,3 +1,4 @@
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -20,6 +21,8 @@ h1 {
 
 table {
     align-items: center;
+    margin: 0 auto;
+    border-spacing: 30px;
 }
 
 h3 {
