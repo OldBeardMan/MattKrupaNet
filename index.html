@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Matt Krupa</title>
 </head>
 <body>
@@ -65,6 +66,41 @@
                 </td>
             </tr>
         </table>
-    </section>    
+    </section> 
+    <section class="kontact">
+        <h1>Want to contact me? You can do it here!</h1>
+        <h3>You can send me anything you would like to! Want me to make a soundtrack for a game? Write! Want to use my music somwhere? Write! Want to tell my what you had for breakfest? Write!!</h3>
+        <p>&nbsp</p>
+    </section> 
+        <div class="container">
+                <form id="submit-form" action="">
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="Awsome Person Jr." required>
+                <label for="lname">Email</label>
+                <input type="text" id="lname" name="email" placeholder="awesomeperson@example.com" required>
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="message" placeholder="I love you Matt, I just wanted to tell you." style="height:170px" required></textarea>
+                <input type="submit" value="Submit">
+                </form>
+        </div> 
+        <script>
+            $("#submit-form").submit((e)=>{
+                e.preventDefault()
+                $.ajax({
+                    url:"",
+                    data:$("#submit-form").serialize(),
+                    method:"post",
+                    success:function (response){
+                        alert("Form submitted successfully")
+                        window.location.reload()
+                        //window.location.href="https://google.com"
+                    },
+                    error:function (err){
+                        alert("Something Error")
+        
+                    }
+                })
+            })
+        </script> 
 </body>
 </html>

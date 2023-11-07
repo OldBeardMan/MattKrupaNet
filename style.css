@@ -31,12 +31,24 @@ h3 {
     font-size: larger;
 }
 
+label {
+    text-align: center;
+    color:whitesmoke;
+    font-size: larger;
+}
+
 p {
     color: whitesmoke; 
     text-align: left;
     font-size: larger;
 }
 
+form {
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
 
 img {
     max-width: 100%;
@@ -69,6 +81,7 @@ td:hover img {
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+    border-bottom: 1px solid #353560;
     
 }
 
@@ -92,3 +105,51 @@ td:hover img {
 .right p {
     margin: 0;
 }
+
+/*tutaj mamy sobie do kontaktu czemść*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #353560;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #57579e;
+  }
+  
+.kontact{
+    max-width: 900px; /* Maksymalna szerokość */
+    word-wrap: break-word;
+    text-align: center;
+    margin: 0;
+}
+
+  /* Style the container/contact section */
+  .container {
+    border-radius: 100px;
+    background-color: #000000;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+  }
+
+  
+  
