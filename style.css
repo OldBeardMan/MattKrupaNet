@@ -134,22 +134,40 @@ td:hover img {
     background-color: #57579e;
   }
   
-.kontact{
+  .dupa {
+    align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
     max-width: 900px; /* Maksymalna szerokość */
-    word-wrap: break-word;
-    text-align: center;
-    margin: 0;
+    margin: 0 auto; /* Dodanie automatycznych marginesów poziomych, aby wyśrodkować kontener */
 }
 
   /* Style the container/contact section */
   .container {
-    border-radius: 100px;
-    background-color: #000000;
-    padding: 10px;
     align-items: center;
     justify-content: center;
-    margin: 40px 0;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: rgb(19, 3, 56);
+    padding: 10px;
   }
+
+  .social-icons {
+    border-top: 1px solid #353560;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Dodaje odstęp między ikonami */
+}
+
+.social-icons img {
+    width: 20px; /* Dostosuj szerokość ikon do swoich potrzeb */
+    height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
+}
 
   
   
