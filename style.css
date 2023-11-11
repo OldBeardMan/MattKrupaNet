@@ -66,6 +66,7 @@ td:hover img {
     max-width: 800px;
     margin: 20px auto 40px;
     padding: 20px;
+    border-bottom: 1px solid #353560;
 }
 
 .discord {
@@ -73,11 +74,10 @@ td:hover img {
     align-items: center;
     justify-content: center;
     margin: 40px 0;
-    border-top: 1px solid #353560;
-    border-bottom: 1px solid #353560;
 }
 
 .albums {
+    border-top: 1px solid #353560;
     align-items: center;
     justify-content: center;
     margin: 40px 0;
