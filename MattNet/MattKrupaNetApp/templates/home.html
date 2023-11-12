@@ -1,15 +1,17 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Matt Krupa</title>
 </head>
 <body>
     <header>
-        <img src="mattback.png" alt="WHERE IS MATT KRUPA AAAAAAAAAA">    
+        <img src="{% static 'mattback.png' %}" alt="WHERE IS MATT KRUPA AAAAAAAAAA">    
     </header> 
     <section class="content">
             <h1>Hi, I'm Matt and I make music.</h1>
@@ -34,25 +36,25 @@
             <tr>
                 <td>
                     <a href="iceland.html">
-                        <img src="Iceland.png" alt="Iceland" width="200" height="200">
+                        <img src="{% static 'Iceland.png' %}" alt="Iceland" width="200" height="200">
                     </a>
                     <h3>Iceland</h3>
                 </td>
                 <td>
                     <a href="Norway.html">
-                        <img src="Norway.png" alt="Norway" width="200" height="200">
+                        <img src="{% static 'Norway.png' %}" alt="Norway" width="200" height="200">
                     </a>
                     <h3>Norway</h3>
                 </td>
                 <td>
                     <a href="Winter.html">
-                        <img src="Winter.jpg" alt="Winter" width="200" height="200">
+                        <img src="{% static 'Winter.jpg' %}" alt="Winter" width="200" height="200">
                     </a>
                     <h3>Winter</h3>
                 </td>
                 <td>
                     <a href="coversvol1.html">
-                        <img src="Vol1.jpg" alt="Covers Vol.1" width="200" height="200">
+                        <img src="{% static 'Vol1.jpg' %}" alt="Covers Vol.1" width="200" height="200">
                     </a>
                     <h3>Covers Vol.1</h3>
                 </td>
@@ -60,7 +62,7 @@
             <tr>
                 <td>
                     <a href="intheautumnforest.html">
-                        <img src="Autumn.jpg" alt="In The Autmun Forest" width="200" height="200">
+                        <img src="{% static 'Autumn.jpg' %}" alt="In The Autmun Forest" width="200" height="200">
                     </a>
                     <h3>In The Autumn Forest</h3>
                 </td>
@@ -106,19 +108,19 @@
     <section class="social-icons">
         <p>&nbsp</p>
         <a href="https://www.youtube.com/channel/UCGIB3mFHUD2Fh-MthueSbXQ" target="_blank">
-            <img src="youtube.png" alt="YouTube">
+            <img src="{% static 'youtube.png' %}" alt="YouTube">
         </a>
         <a href="https://www.facebook.com/mattkrupamusic" target="_blank">
-            <img src="facebook.png" alt="Facebook">
+            <img src="{% static 'facebook.png' %}" alt="Facebook">
         </a>
         <a href="https://www.instagram.com/matt_krupa_music/" target="_blank">
-            <img src="instagram.png" alt="Facebook">
+            <img src="{% static 'instagram.png' %}" alt="Facebook">
         </a>
         <a href="https://mattkrupa.bandcamp.com/" target="_blank">
-            <img src="bandcamp.png" alt="Facebook">
+            <img src="{% static 'bandcamp.png' %}" alt="Facebook">
         </a>
         <a href="https://open.spotify.com/artist/0hduI8doHSaCxLeb2s9t08?si=rYerSEUySua6srCSQNYbeA" target="_blank">
-            <img src="spotify.png" alt="Facebook">
+            <img src="{% static 'Spotify.png' %}" alt="Facebook">
         </a>
     </section>
     
