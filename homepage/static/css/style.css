@@ -1,0 +1,183 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+}
+
+header {
+    background-color: transparent;
+    position: top;
+    overflow: hidden;
+}
+
+h1 {
+    color: rgb(0, 125, 228); 
+    text-align: center;
+    font-size:xx-large;
+    line-height: 5%;
+}
+
+table {
+    align-items: center;
+    margin: 0 auto;
+    border-spacing: 30px;
+}
+
+h3 {
+    text-align: center;
+    color:whitesmoke;
+    font-size: larger;
+}
+
+label {
+    text-align: center;
+    color:whitesmoke;
+    font-size: larger;
+}
+
+p {
+    color: whitesmoke; 
+    text-align: left;
+    font-size: larger;
+}
+
+form {
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+td:hover img {
+    transform: scale(1.1); /* Zwiększenie skali obrazka o 10% */
+    transition: transform 0.3s; /* Dodaj płynną animację o czasie trwania 0.3 sekundy */
+}
+
+.content {
+    max-width: 800px;
+    margin: 20px auto 40px;
+    padding: 20px;
+    border-bottom: 1px solid #353560;
+}
+
+.discord {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+}
+
+.albums {
+    border-top: 1px solid #353560;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    border-bottom: 1px solid #353560;
+    
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.left iframe {
+    width: 100%;
+    max-height: 300px;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.right p {
+    margin: 0;
+}
+
+/*tutaj mamy sobie do kontaktu czemść*/
+
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #353560;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #57579e;
+  }
+  
+  .dupa {
+    align-items: center; /* Wyśrodkowanie w pionie */
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    max-width: 900px; /* Maksymalna szerokość */
+    margin: 0 auto; /* Dodanie automatycznych marginesów poziomych, aby wyśrodkować kontener */
+}
+
+  /* Style the container/contact section */
+  .container {
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 100px;
+    background-color: rgb(19, 3, 56);
+    padding: 10px;
+  }
+
+  .social-icons {
+    border-top: 1px solid #353560;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px; /* Dodaje odstęp między ikonami */
+}
+
+.social-icons img {
+    width: 20px; /* Dostosuj szerokość ikon do swoich potrzeb */
+    height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
+}
+
+.email_list {
+    border-top: 1px solid #353560;
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    z-index: 2;
+}
+  
