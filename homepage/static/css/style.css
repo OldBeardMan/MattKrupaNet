@@ -169,7 +169,7 @@ td:hover img {
     height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
 }
 
-.email_list {
+.post{
     border-top: 1px solid #353560;
     display: none;
     position: fixed;
