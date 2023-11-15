@@ -3,22 +3,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>Matt Krupa</title>
 </head>
 <body>
+
+
     <header>
         <img src="{% static 'images/mattback.png' %}" alt="WHERE IS MATT KRUPA AAAAAAAAAA">    
-    </header> 
+    </header>
+    
+    
     <section class="content">
             <h1>Hi, I'm Matt and I make music.</h1>
             <h3>You probably don't know me.</h3>
             <p>&nbsp</p>
             <p>I make ambient, acoustic and sometimes alternative music. Playing guitar, bass and piano (and some other funny instruments) If you wanna listen to it, just keep scrolling. Here on this site you can find all of it and listen to it freely.</p>
     </section>
+
+
     <div class="discord">
         <div class="left">
             <iframe src="https://discordapp.com/widget?id=904710531183689809&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
@@ -29,11 +34,19 @@
         </div>
     </div>
 
-    <form method="post">
+
+    <section class="newsletter">
+        <h1>Subscribe to my newsletter</h1>
+        <p>I don't really waste my time on social media, so if you wanna have a chat with me, get fresh updates about my music and hear some sneak-peaks before realese - feel free to join now!</p>
+    </section>
+    <form method="post" action="{% url 'home' %}" class="subscribe-form">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Get news from Matt!</button>
-    </form>
+        <div class="form-group">
+            {{ form.as_p }}
+        </div>
+        <button type="submit" class="btn-subscribe">Subscribe</button>
+    </form>      
+
 
     <section class="albums">
         <h1>All of my work</h1>

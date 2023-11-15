@@ -62,19 +62,64 @@ td:hover img {
     transition: transform 0.3s; /* Dodaj płynną animację o czasie trwania 0.3 sekundy */
 }
 
+/*NAGŁÓWEK*/
+
 .content {
     max-width: 800px;
     margin: 20px auto 40px;
     padding: 20px;
-    border-bottom: 1px solid #353560;
 }
 
+/*ZAPROSZENIE DO DISCORDA*/
+
 .discord {
+    border-top: 1px solid #353560;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 40px 0;
 }
+
+/*CZĘŚĆ Z NEWSLETTEREM*/
+
+.newsletter{
+    border-top: 1px solid #353560;
+    display: flex;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    text-align: center ; /* Dodaj to, aby również wyśrodkować tekst wewnątrz diva */
+    max-width: 600px ; /* Ustaw maksymalną szerokość dla responsywności */
+    margin: 0 auto ; /* Automatyczne marginesy na bokach */
+    padding: 10px ;
+}
+
+.subscribe-form {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.btn-subscribe {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.btn-subscribe:hover {
+    background-color: #2980b9;
+}
+
+
+/*CZĘŚĆ Z ALBUMAMI*/
 
 .albums {
     border-top: 1px solid #353560;
@@ -160,24 +205,12 @@ td:hover img {
     margin-top: 20px;
 }
 
-.social-icons a {
+    .social-icons a {
     margin: 0 10px; /* Dodaje odstęp między ikonami */
 }
 
-.social-icons img {
+    .social-icons img {
     width: 20px; /* Dostosuj szerokość ikon do swoich potrzeb */
     height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
-}
-
-.post{
-    border-top: 1px solid #353560;
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    z-index: 2;
 }
   
