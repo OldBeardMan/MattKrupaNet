@@ -34,20 +34,19 @@
         </div>
     </div>
 
-
-    <section class="newsletter">
-        <h1>Subscribe to my newsletter</h1>
-        <h3>And be first to know about new projects!</h3>
-        <p>&nbsp</p>
-        <p>Don't have a Discord, but still want to get updates? This is the right place! Write your e-mail below and get emails with updates about my music! NO SPAM! I'm writing only when I publish something new!</p>
-    </section>
-    <form method="post" action="{% url 'home' %}" class="subscribe-form">
-        {% csrf_token %}
-        <div class="form-group">
+    <section class="content"
+        <section class="newsletter">
+            <h1>Subscribe to my newsletter</h1>
+            <h3>And be first to know about new projects!</h3>
+            <p>&nbsp</p>
+            <p>Don't have a Discord, but still want to get updates? This is the right place! Write your e-mail below and get emails with updates about my music! NO SPAM! I'm writing only when I publish something new!</p>
+        </section>
+        <form method="post" action="{% url 'home' %}" class="subscribe-form">
+            {% csrf_token %}
             {{ form.as_p }}
-        </div>
-        <button type="submit" class="btn-subscribe">Subscribe</button>
-    </form>      
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+        </form>   
+    </section>   
 
 
     <section class="albums">

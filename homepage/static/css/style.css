@@ -45,6 +45,7 @@ p {
 
 form {
     align-items: center;
+    text-align: center;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
@@ -79,7 +80,6 @@ td:hover img {
     justify-content: center;
     margin: 40px 0;
     border-bottom: 1px solid #353560;
-    background-color: #363636;
 }
 
 /*CZĘŚĆ Z NEWSLETTEREM*/
@@ -91,37 +91,46 @@ td:hover img {
     justify-content: center ;
     text-align: center ; /* Dodaj to, aby również wyśrodkować tekst wewnątrz diva */
     max-width: 800px;
-    margin: 20px auto 40px;
+    margin: 10px auto 40px;
     padding: 20px;
+    margin-bottom: 20px; /* Zmniejszenie odstępu na dole sekcji z tekstem */
+    padding-bottom: 10px;
 }
 
 .subscribe-form {
+    margin-top: 5px;
     max-width: 400px;
-    margin: 0 auto;
     text-align: center;
 }
 
-.form-group {
-    margin-bottom: 15px;
+.custom-input {
+    width: 300px; /* Dostosuj szerokość pola */
+    height: 40px; /* Dostosuj wysokość pola */
+    border-radius: 10px; /* Zaokrąglenie krawędzi */
+    text-align: center; /* Wyśrodkowanie tekstu */
+    font-size: 18px; /* Dostosuj rozmiar czcionki */
+    margin: auto; /* Wyśrodkowanie pola */
+    display: block; /* Ustaw pole jako blokowe */
+    margin-left: auto; /* Wyśrodkowanie w poziomie */
+    margin-right: auto; /* Wyśrodkowanie w poziomie */
 }
 
-.btn-subscribe {
-    background-color: #353560;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    cursor: pointer;
-}
 
-.btn-subscribe:hover {
-    background-color: #57579e;
+.btn-subscribe {   
+  padding: 20px 60px;
+  border-radius: 5rem;
+  background: linear-gradient(90deg, #25198d, #0e679b);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 
 /*CZĘŚĆ Z ALBUMAMI*/
 
 .albums {
-    background-color: #363636;
     border-top: 1px solid #353560;
     align-items: center;
     justify-content: center;
