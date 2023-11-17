@@ -78,20 +78,20 @@ td:hover img {
     align-items: center;
     justify-content: center;
     margin: 40px 0;
+    border-bottom: 1px solid #353560;
 }
 
 /*CZĘŚĆ Z NEWSLETTEREM*/
 
 .newsletter{
-    border-top: 1px solid #353560;
     display: flex;
     flex-direction: column ;
     align-items: center ;
     justify-content: center ;
     text-align: center ; /* Dodaj to, aby również wyśrodkować tekst wewnątrz diva */
-    max-width: 600px ; /* Ustaw maksymalną szerokość dla responsywności */
-    margin: 0 auto ; /* Automatyczne marginesy na bokach */
-    padding: 10px ;
+    max-width: 800px;
+    margin: 20px auto 40px;
+    padding: 20px;
 }
 
 .subscribe-form {
@@ -105,17 +105,15 @@ td:hover img {
 }
 
 .btn-subscribe {
-    background-color: #3498db;
-    color: #ffffff;
-    padding: 10px 20px;
+    background-color: #353560;
+    color: white;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
-    border-radius: 5px;
 }
 
 .btn-subscribe:hover {
-    background-color: #2980b9;
+    background-color: #57579e;
 }
 
 
