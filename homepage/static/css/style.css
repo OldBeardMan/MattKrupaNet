@@ -79,6 +79,7 @@ td:hover img {
     justify-content: center;
     margin: 40px 0;
     border-bottom: 1px solid #353560;
+    background-color: #363636;
 }
 
 /*CZĘŚĆ Z NEWSLETTEREM*/
@@ -120,6 +121,7 @@ td:hover img {
 /*CZĘŚĆ Z ALBUMAMI*/
 
 .albums {
+    background-color: #363636;
     border-top: 1px solid #353560;
     align-items: center;
     justify-content: center;
@@ -195,6 +197,9 @@ td:hover img {
     padding: 10px;
   }
 
+
+  /*ikonki do socjalów*/
+  
   .social-icons {
     border-top: 1px solid #353560;
     display: flex;
