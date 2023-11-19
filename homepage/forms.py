@@ -8,7 +8,7 @@ class SubscribeForm(forms.ModelForm):
         widgets = {
             'email': forms.EmailInput(attrs={
                 'class': 'custom-input',
-                'placeholder': 'Some awesome person'
+                'placeholder': 'awesomeperson@email.net'
             }),
         }
         labels = {

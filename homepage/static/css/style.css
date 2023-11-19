@@ -63,6 +63,14 @@ td:hover img {
     transition: transform 0.3s; /* Dodaj płynną animację o czasie trwania 0.3 sekundy */
 }
 
+/*PODSTRONY_ALBUMÓW*/
+
+.album_desc {
+    display: flex;
+    margin-right: auto;
+    border-bottom: 1px solid #353560;
+}
+
 /*NAGŁÓWEK*/
 
 .content {
@@ -80,6 +88,27 @@ td:hover img {
     justify-content: center;
     margin: 40px 0;
     border-bottom: 1px solid #353560;
+}
+
+.left {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.left iframe {
+    width: 100%;
+    max-height: 300px;
+}
+
+.right {
+    flex: 1;
+    padding: 20px;
+    text-align: center;
+}
+
+.right p {
+    margin: 0;
 }
 
 /*CZĘŚĆ Z NEWSLETTEREM*/
@@ -137,27 +166,6 @@ td:hover img {
     margin: 40px 0;
     border-bottom: 1px solid #353560;
     
-}
-
-.left {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-}
-
-.left iframe {
-    width: 100%;
-    max-height: 300px;
-}
-
-.right {
-    flex: 1;
-    padding: 20px;
-    text-align: center;
-}
-
-.right p {
-    margin: 0;
 }
 
 /*tutaj mamy sobie do kontaktu czemść*/

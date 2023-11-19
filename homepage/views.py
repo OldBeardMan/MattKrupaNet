@@ -7,10 +7,18 @@ def home_view(request):
         form = SubscribeForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect('home')  # Utwórz widok potwierdzenia zapisu
+            return redirect('done')  # Utwórz widok potwierdzenia zapisu
     else:
         form = SubscribeForm()
 
     return render(request, 'home.html', {'form': form})
+
+def iceland_view(request):
+
+    return render(request, 'iceland.html')
+
+def done_view(request):
+
+    return render(request, 'done.html')
 
 
