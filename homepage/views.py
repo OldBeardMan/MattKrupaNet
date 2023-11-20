@@ -31,6 +31,6 @@ def coversvol1_view(request):
 
 def intheautumnforest_view(request):
 
-    return render(request, 'intheautumnforestview.html')
+    return render(request, 'intheautumnforest.html')
 
 

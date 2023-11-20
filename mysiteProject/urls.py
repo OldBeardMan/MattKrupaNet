@@ -23,7 +23,7 @@ urlpatterns = [
     path('iceland/', iceland_view, name='iceland'),
     path('norway/', norway_view, name='norway'),
     path('winter/', winter_view, name='winter'),
-    path('covers_vol_1/', coversvol1_view, name='coversvol1'),
-    path('in_the_autumn_forest/', intheautumnforest_view, name='intheautuhmforest'),
+    path('coversvol1/', coversvol1_view, name='coversvol1'),
+    path('intheautumnforest/', intheautumnforest_view, name='intheautumnforest'),
     path('admin/', admin.site.urls),
 ]
