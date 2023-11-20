@@ -17,8 +17,4 @@ def iceland_view(request):
 
     return render(request, 'iceland.html')
 
-def done_view(request):
-
-    return render(request, 'done.html')
-
 

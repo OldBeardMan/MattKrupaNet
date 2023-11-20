@@ -63,14 +63,6 @@ td:hover img {
     transition: transform 0.3s; /* Dodaj płynną animację o czasie trwania 0.3 sekundy */
 }
 
-/*PODSTRONY_ALBUMÓW*/
-
-.album_desc {
-    display: flex;
-    margin-right: auto;
-    border-bottom: 1px solid #353560;
-}
-
 /*NAGŁÓWEK*/
 
 .content {
@@ -156,6 +148,10 @@ td:hover img {
   cursor: pointer;
 }
 
+.subscription-success {
+    text-align: center; /* Center align the text */
+    color: green; /* Set text color to green */
+}
 
 /*CZĘŚĆ Z ALBUMAMI*/
 
@@ -234,3 +230,34 @@ td:hover img {
     height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
 }
   
+/*ALBUMPAGES*/
+
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    max-width: 800px; /* Ustaw szerokość maksymalną */
+    margin: 0 auto; /* Wyśrodkowanie na stronie */
+    padding: 20px; /* Dodatkowy padding */
+    text-align: center; /* Wyśrodkowanie tekstu */
+}
+
+.album-info,
+.bandcamp-container {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .content-wrapper {
+        grid-template-columns: repeat(2, 1fr); /* Dwa kolumny */
+        justify-content: center; /* Wyśrodkowanie na większych ekranach */
+        align-items: right; /* Pozycjonowanie elementów na górze */
+        text-align: left; /* Wyśrodkowanie tekstu na lewo */
+    }
+}
+
+
+
+
+
+

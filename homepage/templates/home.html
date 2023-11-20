@@ -15,7 +15,6 @@
         <img src="{% static 'images/mattback.png' %}" alt="WHERE IS MATT KRUPA AAAAAAAAAA">    
     </header>
     
-    
     <section class="content">
             <h1>Hi, I'm Matt and I make music.</h1>
             <h3>You probably don't know me.</h3>
@@ -41,13 +40,15 @@
             <p>&nbsp</p>
             <p>Don't have a Discord, but still want to get updates? This is the right place! Write your e-mail below and get emails with updates about my music! NO SPAM! I'm writing only when I publish something new!</p>
         </section>
-        <form method="post" action="{% url 'home' %}" class="subscribe-form">
+        <form method="post" action="{% url 'home' %}" class="subscribe-form" id="subscribe-form">
             {% csrf_token %}
             {{ form.as_p }}
             <button type="submit" class="btn-subscribe">Subscribe</button>
         </form>   
-    </section>   
-
+    </section>
+       
+        <div id="subscription-message" class="subscription-success"></div>
+        <script src="{%static 'js/subscription.js' %}"></script>
 
     <section class="albums">
         <h1>All of my work</h1>
