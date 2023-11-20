@@ -17,4 +17,20 @@ def iceland_view(request):
 
     return render(request, 'iceland.html')
 
+def norway_view(request):
+
+    return render(request, 'norway.html')
+
+def winter_view(request):
+
+    return render(request, 'winter.html')
+
+def coversvol1_view(request):
+
+    return render(request, 'coversvol1.html')
+
+def intheautumnforest_view(request):
+
+    return render(request, 'intheautumnforestview.html')
+
 

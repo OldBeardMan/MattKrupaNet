@@ -238,6 +238,9 @@ td:hover img {
     align-items: center;
     justify-content: center;
 }
+.content-wrapper p{
+    word-spacing: 10px;
+}
 
 .album-info {
     flex: 1;
@@ -252,6 +255,7 @@ td:hover img {
     padding: 20px;
     text-align: center;
     max-height: 300px;
+    max-width: 300px;
 }
 
 
