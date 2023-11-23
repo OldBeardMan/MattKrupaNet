@@ -1,5 +1,5 @@
 from django import forms
-from .models import Subscriber
+from .models import Subscriber, Message
 
 class SubscribeForm(forms.ModelForm):
     class Meta:
@@ -14,3 +14,8 @@ class SubscribeForm(forms.ModelForm):
         labels = {
             'email': '',
         }
+
+class MessageForm(forms.ModelForm):
+    class Meta:
+        model = Message
+        fields = ['name', 'email', 'content']
