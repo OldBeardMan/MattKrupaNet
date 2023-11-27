@@ -18,8 +18,6 @@ h1 {
     font-size:xx-large;
     line-height: 5%;
     white-space: normal;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
 }
 
 table {
@@ -318,6 +316,13 @@ td:hover img {
       max-width: 100%; /* Allow it to take full width */
       margin-top: 20px; /* Add some space between the text and the Bandcamp container */
     }
+
+    h1 {
+        white-space: normal;
+        word-break: break-all; /* Użyj break-all zamiast word-wrap: break-word */
+        text-align: center; /* Dodaj wyśrodkowanie tekstu */
+        font-size: x-large; /* Dostosuj rozmiar czcionki */
+      }
   }
 
   .social-icons-pages {
