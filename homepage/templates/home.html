@@ -6,6 +6,7 @@
     <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
     <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/discordInvite.css' %}">
     <title>Matt Krupa</title>
 </head>
 {% csrf_token %}
@@ -26,7 +27,14 @@
 
     <div class="discord">
         <div class="left">
-            <iframe src="https://discordapp.com/widget?id=904710531183689809&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <script src="{%static 'js/discordInvite.js' %}"></script>
+                <script>
+                discordInvite.init({
+                inviteCode: 'GJpMmxwRbB',
+                title: 'Matt Enjoyers',
+                });
+                discordInvite.render();
+                </script>
         </div>
         <div class="right">
             <h3>Join my Discord today!</h3>
