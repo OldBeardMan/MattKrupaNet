@@ -139,14 +139,20 @@ td:hover img {
 
 
 .btn-subscribe {   
-  padding: 20px 60px;
-  border-radius: 5rem;
-  background: linear-gradient(90deg, #25198d, #0e679b);
-  color: #fff;
-  font-size: 1rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
+    border: 2px solid #43b581;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #43b581;
+    font-size: 16px;
+    cursor: pointer;
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+.btn-subscribe:hover{
+    background-color: #26684a;
+    color: white;
 }
 
 .subscription-success {
@@ -186,7 +192,7 @@ td:hover img {
     margin: 0 auto;
     padding: 20px;
     border-radius: 15px;
-    background-color: #11088d;
+    background-color: #37393e;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
   }
   
@@ -211,15 +217,22 @@ td:hover img {
   }
   
   .btn-message {   
-    padding: 20px 60px;
-    border-radius: 5rem;
-    background: linear-gradient(90deg, #25198d, #0e679b);
-    color: #fff;
-    font-size: 1rem;
-    border: none;
-    outline: none;
+    border: 2px solid #43b581;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #43b581;
+    font-size: 16px;
     cursor: pointer;
-  }
+    outline: none;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+    .btn-message:hover{
+    background-color: #26684a;
+    color: white;
+}
+
 
 
   /*ikonki do socjalów*/
@@ -283,10 +296,10 @@ td:hover img {
 }
 
 .back-button {
-    border: 2px solid rgb(2, 5, 194);
+    border: 2px solid #43b581;
     padding: 10px 20px;
     background-color: transparent;
-    color: rgb(2, 5, 194);
+    color: #43b581;
     font-size: 16px;
     cursor: pointer;
     outline: none;
@@ -295,7 +308,7 @@ td:hover img {
 }
 
 .back-button:hover {
-    background-color: rgb(2, 5, 194);
+    background-color: #26684a;
     color: white;
 }
 
@@ -323,6 +336,9 @@ td:hover img {
         text-align: center; /* Dodaj wyśrodkowanie tekstu */
         font-size: x-large; /* Dostosuj rozmiar czcionki */
       }
+     .discord {
+        flex-direction: column-reverse; /* Zmiana kolejności divów na smartfonie */
+    }
   }
 
   .social-icons-pages {
