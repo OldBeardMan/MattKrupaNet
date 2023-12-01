@@ -5,19 +5,16 @@ def home_view(request):
 
     if request.method == 'POST':
         form1 = SubscribeForm(request.POST)
+        form2 = MessageForm(request.POST)
+        
         if form1.is_valid():
             form1.save()
-            return redirect('done')  # Utwórz widok potwierdzenia zapisu
-    else:
-        form1 = SubscribeForm()
 
-
-    if request.method == 'POST':
-        form2 = MessageForm(request.POST)
         if form2.is_valid():
             form2.save()
-           
+
     else:
+        form1 = SubscribeForm()
         form2 = MessageForm()
 
     return render(request, 'home.html', {'form1': form1, 'form2': form2})
