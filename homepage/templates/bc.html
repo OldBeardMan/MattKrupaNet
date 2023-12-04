@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.png' %}" >
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/faviconbc.png' %}" >
     <meta charset="UTF-8">    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta name="robots" content="index, follow">
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/bc.css' %}">
     <title>Blooming Cactus</title>
 </head>
 {% csrf_token %}
@@ -13,20 +13,30 @@
 
 
     <header>
-        <img src="{% static 'images/mattback.png' %}" alt="WHERE IS MATT KRUPA AAAAAAAAAA">    
+        <img src="{% static 'images/bc.jpg' %}" alt="WHERE IS MATT KRUPA AAAAAAAAAA">    
     </header>
     
     <section class="content">
+        <div class="text">
             <h1>Blooming Cactus</h1>
-            <h3>Christian hard rock band</h3>
-            <p>&nbsp</p>
-            <p>Rock/hard rock christian band, their history begins in the year 2021, when Matt decided to make something heavier than himself.
+             <h3>Christian hard rock band</h3>
+             <p>&nbsp</p>
+             <p>Rock/hard rock christian band, their history begins in the year 2021, when Matt decided to make something heavier than himself.
                 From the beginning 3 members - Matt Krupa, Wojtek 'P00sheck' Piskała and Antoni 'doublesidedead' Fryc. They had a 2 year journey
                 finished with a full length album - Self-Titled (that you can listen here) in July of 2023. After the album realese band kind of
                 split up. Hard to say if there will be any new realeses soon, but the project itself is very well done and oh! you can listen to
                 it right here!
             </p>
+        </div>
+        <div class="logos">
+            <img src="{% static 'images/FrytaCactus.png' %}" alt="Logo1" class="logo">
+            <img src="{% static 'images/MattCactus.png' %}" alt="Logo1" class="logo">
+            <img src="{% static 'images/PusheckCactus.png' %}" alt="Logo2" class="logo">
+        </div>
     </section>
+    
+
+    <div class="stripe"></div>
 
     <div class="content-wrapper">
         <div class="album-info">
@@ -58,13 +68,13 @@
                 theory. It was included with the album later.
             <p>&nbsp</p>
             <div class="social-icons-pages">
-                <a href="https://www.youtube.com/watch?v=Xll-c7b-gOg&list=OLAK5uy_lDpauuNCLaERvRFT1HegaapwNNKXU5U6w" target="_blank">
+                <a href="https://www.youtube.com/watch?v=mXPmaP0p3TQ&list=OLAK5uy_mtrnaY14hr-1567fFqaI9kMfwrX8flCSM" target="_blank">
                     <img src="{% static 'images/youtube.png' %}" alt="YouTube">
                 </a>
-                <a href="https://open.spotify.com/album/3eLt8pCbFhPLAQoQPRYZn3?si=NkfiKs1_SU2o6TFa9iQ7Zw" target="_blank">
+                <a href="https://open.spotify.com/album/7m71dxdQ3MYjeUIoOMqFN8?si=kckOcPwzQ5OQkTZbxR6mPA" target="_blank">
                     <img src="{% static 'images/spotify.png' %}" alt="Facebook">
                 </a>
-                <a href="https://music.apple.com/pl/album/covers-vol-1/1538618066" target="_blank">
+                <a href="https://music.apple.com/pl/album/self-titled/1692315736" target="_blank">
                     <img src="{% static 'images/itunes.png' %}" alt="Itunes">
                 </a>
             </div>
@@ -80,19 +90,19 @@
 
     <section class="social-icons">
         <p>&nbsp</p>
-        <a href="https://www.youtube.com/channel/UCGIB3mFHUD2Fh-MthueSbXQ" target="_blank">
+        <a href="https://www.youtube.com/@blooming_cactus/featured" target="_blank">
             <img src="{% static 'images/youtube.png' %}" alt="YouTube">
         </a>
-        <a href="https://www.facebook.com/mattkrupamusic" target="_blank">
+        <a href="https://www.facebook.com/bloomtus/" target="_blank">
             <img src="{% static 'images/facebook.png' %}" alt="Facebook">
         </a>
         <a href="https://www.instagram.com/matt_krupa_music/" target="_blank">
             <img src="{% static 'images/instagram.png' %}" alt="Facebook">
         </a>
-        <a href="https://open.spotify.com/artist/0hduI8doHSaCxLeb2s9t08?si=rYerSEUySua6srCSQNYbeA" target="_blank">
+        <a href="https://open.spotify.com/artist/6wWZhNmKxBplHsJEJ5mL9n?si=0NQO1L38QSa1-cnLHzVxqA" target="_blank">
             <img src="{% static 'images/spotify.png' %}" alt="Facebook">
         </a>
-        <a href="https://music.apple.com/gb/artist/matt-krupa/932056625" target="_blank">
+        <a href="https://music.apple.com/pl/artist/blooming-cactus/1618926953" target="_blank">
             <img src="{% static 'images/itunes.png' %}" alt="Itunes">
         </a>
     </section>
