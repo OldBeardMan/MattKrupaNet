@@ -253,6 +253,25 @@ td:hover img {
     width: 20px; /* Dostosuj szerokość ikon do swoich potrzeb */
     height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
 }
+
+    .logo-container {
+    position: fixed;
+    bottom: 10px; /* Odległość od dolnej krawędzi ekranu */
+    left: 10px; /* Odległość od lewej krawędzi ekranu */
+    z-index: 999; /* Upewnij się, że logo będzie na wierzchu */
+  }
+
+  /* Styl dla logo */
+  .logo {
+    width: 20px; /* Dostosuj rozmiar logo */
+    height: auto;
+    transition: transform 0.3s ease-in-out; /* Animacja transformacji */
+  }
+
+  /* Animacja przy najechaniu kursorem (hover) */
+  .logo-container:hover .logo {
+    transform: scale(1.1); /* Zwiększenie rozmiaru logo */
+  }
   
 /*ALBUMPAGES*/
 
