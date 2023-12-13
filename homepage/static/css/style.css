@@ -20,19 +20,7 @@ h1 {
     white-space: normal;
 }
 
-table {
-    align-items: center;
-    margin: 0 auto;
-    border-spacing: 30px;
-}
-
 h3 {
-    text-align: center;
-    color:whitesmoke;
-    font-size: larger;
-}
-
-label {
     text-align: center;
     color:whitesmoke;
     font-size: larger;
@@ -41,6 +29,28 @@ label {
 p {
     color: whitesmoke; 
     text-align: left;
+    font-size: larger;
+}
+
+table {
+    align-items: center;
+    margin: 0 auto;
+    border-spacing: 30px;
+}
+
+td {
+    text-align: center;
+}
+
+td:hover img {
+    transform: scale(1.1); /* Zwiększenie skali obrazka o 10% */
+    transition: transform 0.3s; /* Dodaj płynną animację o czasie trwania 0.3 sekundy */
+}
+
+
+label {
+    text-align: center;
+    color:whitesmoke;
     font-size: larger;
 }
 
@@ -57,11 +67,6 @@ img {
     height: auto;
     display: block;
     margin: 0 auto;
-}
-
-td:hover img {
-    transform: scale(1.1); /* Zwiększenie skali obrazka o 10% */
-    transition: transform 0.3s; /* Dodaj płynną animację o czasie trwania 0.3 sekundy */
 }
 
 /*NAGŁÓWEK*/
@@ -331,8 +336,44 @@ td:hover img {
     color: white;
 }
 
+.social-icons-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+    .social-icons-pages a {
+    margin: 0 10px; /* Dodaje odstęp między ikonami */
+}
+
+    .social-icons-pages img {
+    width: 20px; /* Dostosuj szerokość ikon do swoich potrzeb */
+    height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
+}
+
+
 /*DLA SMARTFONÓW*/
 @media screen and (max-width: 767px) {
+
+    h1 {
+        white-space: normal;
+        word-break: break-all; /* Użyj break-all zamiast word-wrap: break-word */
+        text-align: center; /* Dodaj wyśrodkowanie tekstu */
+        font-size: x-large; /* Dostosuj rozmiar czcionki */
+      }
+
+      table, tr {
+        display: block;
+      }
+      td {
+        display: inline-block;
+        width: 100%; /* Zapobiega przesunięciu wierszy w trybie kolumnowym */
+        box-sizing: border-box; /* Dla poprawnego rozmiaru ramki */
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
     .content-wrapper {
       padding-left: 20px;
       padding-right: 20px;
@@ -349,33 +390,10 @@ td:hover img {
       margin-top: 20px; /* Add some space between the text and the Bandcamp container */
     }
 
-    h1 {
-        white-space: normal;
-        word-break: break-all; /* Użyj break-all zamiast word-wrap: break-word */
-        text-align: center; /* Dodaj wyśrodkowanie tekstu */
-        font-size: x-large; /* Dostosuj rozmiar czcionki */
-      }
-     .discord {
+    .discord {
         flex-direction: column-reverse; /* Zmiana kolejności divów na smartfonie */
     }
   }
-
-  .social-icons-pages {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-}
-
-    .social-icons-pages a {
-    margin: 0 10px; /* Dodaje odstęp między ikonami */
-}
-
-    .social-icons-pages img {
-    width: 20px; /* Dostosuj szerokość ikon do swoich potrzeb */
-    height: 20px; /* Dostosuj wysokość ikon do swoich potrzeb */
-}
-
 
 
 
