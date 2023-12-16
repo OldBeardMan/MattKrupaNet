@@ -11,6 +11,8 @@
 </head>
 {% csrf_token %}
 <body>
+
+    
     <header>
         <img src="{% static 'images/mattback.png' %}" alt="">    
     </header>
@@ -21,6 +23,8 @@
             <p>&nbsp</p>
             <p>I make ambient, acoustic and sometimes alternative music. Playing guitar, bass and piano (and some other funny instruments) If you wanna listen to it, just keep scrolling. Here on this site you can find all of it and listen to it freely.</p>
     </section>
+
+
 
     <div class="discord">
 
@@ -35,7 +39,6 @@
                 </script>
             <div id="discordInviteBox"></div>
         </div>
-
         <div class="right">
             <h3>Join my Discord today!</h3>
             <p>I don't really waste my time on social media, so if you wanna have a chat with me, get fresh updates about my music and hear some sneak-peaks before realese - feel free to join now!</p>
@@ -43,7 +46,10 @@
 
     </div>
 
+
+
     <section class="content">
+
         <section class="newsletter">
             <h1>Subscribe to my newsletter</h1>
             <h3>And be first to know about new projects!</h3>
@@ -55,9 +61,13 @@
             {{ form1.as_p }}
             <button type="submit" class="btn-subscribe">Subscribe</button>
         </form>   
+
     </section>
 
+
+
     <section class="albums">
+
         <h1>All of my work</h1>
         <h3>feel free to listen to any of it on this site</h3>
         <p>&nbsp</p>
@@ -97,6 +107,7 @@
                 </td>
             </tr>
         </table>
+
     </section> 
 
     
@@ -120,7 +131,9 @@
           
           <button type="submit" class="btn-message">Submit</button>
         </form>
-      </div>
+    </div>
+
+
     <p>&nbsp</p>
 
 
@@ -143,11 +156,12 @@
         </a>
     </section>
 
+
     <a href="/bc/"> 
         <div class="logo-container">
           <img src="{% static 'images/CactusLogo7.png' %}" alt="Logo" class="logo">
         </div>
-      </a>
+    </a>
 
 
 </body>
