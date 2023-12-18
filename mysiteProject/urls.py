@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth import views as auth_views
 from django.urls import path
-from homepage.views import home_view, iceland_view, norway_view, winter_view, coversvol1_view, intheautumnforest_view, bc_view
+from homepage.views import home_view, iceland_view, norway_view, winter_view, coversvol1_view, intheautumnforest_view, bc_view, news_list
 
 urlpatterns = [
     path('', home_view, name='home'), #home
@@ -30,4 +30,6 @@ urlpatterns = [
     path('bc/', bc_view, name='bc'),
     path('admin/', admin.site.urls, name='admin'),
     path('accounts/login/', auth_views.LoginView.as_view(template_name='admin/login.html'), name='login'),
+    path('news/', news_list, name='news_list'),
 ]
+

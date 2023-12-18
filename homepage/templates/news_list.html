@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>News</title>
+</head>
+<body>
+    <h1>News</h1>
+    {% for item in news %}
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.publication_date|date:"F d, Y" }}</p>
+        <img src="{{ item.image.url }}" alt="{{ item.title }}">
+        <p>{{ item.content }}</p>
+        <hr>
+    {% endfor %}
+</body>
+</html>
