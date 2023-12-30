@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect
 from .forms import SubscribeForm, MessageForm
-from .models import News
 
 def home_view(request):
 
@@ -48,7 +47,3 @@ def bc_view(request):
     return render(request, 'bc.html')
 
 
-
-def news_list(request):
-    news = News.objects.all().order_by('-publication_date')
-    return render(request, 'news_list.html', {'news': news})

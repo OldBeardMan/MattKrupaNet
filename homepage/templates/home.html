@@ -18,10 +18,10 @@
     </header>
     
     <section class="content">
-            <h1>Hi, I'm Matt and I make music.</h1>
+            <h1>Hi, I'm Matt Krupa and I make music.</h1>
             <h3>You probably don't know me.</h3>
             <p>&nbsp</p>
-            <p>I make ambient, acoustic and sometimes alternative music. Playing guitar, bass and piano (and some other funny instruments) If you wanna listen to it, just keep scrolling. Here on this site you can find all of it and listen to it freely.</p>
+            <p>I make ambient, acoustic and sometimes alternative music. Playing guitar, bass and piano (and some other funny instruments). If you wanna listen to it, just keep scrolling. Here on this site you can find all of it and listen to it freely.</p>
     </section>
 
 
@@ -44,25 +44,15 @@
             <p>I don't really waste my time on social media, so if you wanna have a chat with me, get fresh updates about my music and hear some sneak-peaks before realese - feel free to join now!</p>
         </div>
 
+
     </div>
 
-
-
-    <section class="content">
-
-        <section class="newsletter">
-            <h1>Subscribe to my newsletter</h1>
-            <h3>And be first to know about new projects!</h3>
-            <p>&nbsp</p>
-            <p>Don't have a Discord, but still want to get updates? This is the right place! Write your e-mail below and get emails with updates about my music! NO SPAM! I'm writing only when I publish something new!</p>
-        </section>
-        <form method="post" action="{% url 'home' %}" class="subscribe-form" id="subscribe-form">
-            {% csrf_token %}
-            {{ form1.as_p }}
-            <button type="submit" class="btn-subscribe">Subscribe</button>
-        </form>   
-
-    </section>
+    <div class="youtube-video">
+        <h1>My newest music video!</h1>
+        <h3> Watch and listen</h3>
+        <p>&nbsp</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/0suoE2z1MxA?si=y8HVPwVLewu09Wia" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>    
 
 
 
@@ -110,8 +100,26 @@
 
     </section> 
 
+
+    
+
+        <section class="newsletter">
+            <h1>Join my mailing list!</h1>
+            <h3>And get news about my music directly from me! No spam!</h3>
+        </section>
+        <form method="post" action="{% url 'home' %}" class="subscribe-form" id="subscribe-form">
+            {% csrf_token %}
+            {{ form1.as_p }}
+            <button type="submit" class="btn-subscribe">Subscribe</button>
+            <p>&nbsp</p>
+        </form>   
+
+    
+
+    <div class="pasior"></div>
     
     <section class="dupa">
+        <p>&nbsp</p>
         <h1>Want to contact me? Do it here!</h1>
         <h3>You can send me anything you would like to! Want me to make a soundtrack for a game? Write! Want to use my music somwhere? Write! Want to tell my what you had for breakfest? Write!!</h3>
         <p>&nbsp</p>
@@ -141,9 +149,6 @@
         <p>&nbsp</p>
         <a href="https://www.youtube.com/channel/UCGIB3mFHUD2Fh-MthueSbXQ" target="_blank">
             <img src="{% static 'images/youtube.png' %}" alt="YouTube">
-        </a>
-        <a href="https://www.facebook.com/mattkrupamusic" target="_blank">
-            <img src="{% static 'images/facebook.png' %}" alt="Facebook">
         </a>
         <a href="https://mattkrupa.bandcamp.com/" target="_blank">
             <img src="{% static 'images/bandcamp.png' %}" alt="Facebook">

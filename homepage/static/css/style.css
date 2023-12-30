@@ -69,6 +69,10 @@
     }
 
 
+    .pasior{
+        border-bottom: 1px solid #353560;
+    }
+
 /*NAGŁÓWEK*/
 
     .content {
@@ -110,6 +114,38 @@
         margin: 0;
     }
 
+
+/*WIDEŁO*/
+
+    .youtube-video {
+        text-align: center;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .youtube-video iframe{
+        width: 100%;
+        height: 315px;
+        max-width: 100%;
+    }
+
+
+/*CZĘŚĆ Z ALBUMAMI*/
+
+    .albums {
+        border-top: 1px solid #353560;
+        align-items: center;
+        justify-content: center;
+        margin: 40px 0;
+        border-bottom: 1px solid #353560;
+        
+    }
+    
+    .ablums p {
+        color: rgb(105, 105, 105); 
+        text-align: center;
+        font-size: smaller;
+    }
 
 /*CZĘŚĆ Z NEWSLETTEREM*/
 
@@ -167,25 +203,7 @@
         color: green; 
     }
 
-
-/*CZĘŚĆ Z ALBUMAMI*/
-
-    .albums {
-        border-top: 1px solid #353560;
-        align-items: center;
-        justify-content: center;
-        margin: 40px 0;
-        border-bottom: 1px solid #353560;
-        
-    }
     
-    .ablums p {
-        color: rgb(105, 105, 105); 
-        text-align: center;
-        font-size: smaller;
-    }
-
-
 /*MESSAGE FORM*/
 
     .dupa {
