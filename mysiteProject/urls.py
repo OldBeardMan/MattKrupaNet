@@ -19,7 +19,13 @@ from django.contrib.auth import views as auth_views
 from django.conf.urls.static import static
 from django.urls import path
 from django.conf import settings
+from django.contrib.sitemaps.views import sitemap
+from homepage.sitemaps import mysiteMap
 from homepage.views import home_view, iceland_view, norway_view, winter_view, coversvol1_view, intheautumnforest_view, bc_view
+
+sitemaps = {
+    'static' : mysiteMap,
+}
 
 urlpatterns = [
     path('', home_view, name='home'), #home
@@ -31,5 +37,6 @@ urlpatterns = [
     path('bc/', bc_view, name='bc'),
     path('admin/', admin.site.urls, name='admin'),
     path('accounts/login/', auth_views.LoginView.as_view(template_name='admin/login.html'), name='login'),
+    path('sitemap.xml', sitemap, {'sitemaps': sitemaps}),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

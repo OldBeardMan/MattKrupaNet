@@ -1,5 +1,6 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from .forms import SubscribeForm, MessageForm
+
 
 def home_view(request):
 
@@ -45,5 +46,3 @@ def intheautumnforest_view(request):
 def bc_view(request):
 
     return render(request, 'bc.html')
-
-
