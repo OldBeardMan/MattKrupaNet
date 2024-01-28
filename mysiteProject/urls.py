@@ -24,7 +24,7 @@ from homepage.sitemaps import mysiteMap
 from homepage.views import home_view, iceland_view, norway_view, winter_view, coversvol1_view, intheautumnforest_view, bc_view
 
 sitemaps = {
-    'static' : mysiteMap,
+    'static' : mysiteMap(),
 }
 
 urlpatterns = [

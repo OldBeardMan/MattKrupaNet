@@ -15,3 +15,11 @@ class Message(models.Model):
     def __str__(self):
         return f'Message from {self.email}'
     
+class Post(models.Model):
+    title = models.CharField(max_length=30)
+    date = models.DateTimeField()
+    content = models.TextField()
+    image = models.ImageField()
+
+    def __str__(self):
+        return 1
