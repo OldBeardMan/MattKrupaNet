@@ -1,27 +1,28 @@
 from django.shortcuts import render
-from .forms import SubscribeForm, MessageForm
+from .models import Blog
+import random
+from django.core.paginator import Paginator
 
 
 def home_view(request):
+    blogs = Blog.objects.all()
+    random_blogs = random.sample(list(blogs), 3)
+    context = {'random_blogs': random_blogs}
+    return render(request, 'home.html', context)
 
-    if request.method == 'POST':
-        form1 = SubscribeForm(request.POST)
-        form2 = MessageForm(request.POST)
-        
-        if form1.is_valid():
-            form1.save()
-
-        if form2.is_valid():
-            form2.save()
-
-    else:
-        form1 = SubscribeForm()
-        form2 = MessageForm()
-
-    return render(request, 'home.html', {'form1': form1, 'form2': form2})
+def blog(request):
+    blogs = Blog.objects.all().order_by('-time')
+    paginator = Paginator(blogs, 3)
+    page = request.GET.get('page')
+    blogs = paginator.get_page(page)
+    context = {'blogs': blogs}
+    return render(request, 'blog.html', context)
 
 
-
+def blogpost (request, slug):
+    blog = Blog.objects.get(slug=slug)
+    context = {'blog': blog}
+    return render(request, 'blogpost.html', context)
 
 def iceland_view(request):
 

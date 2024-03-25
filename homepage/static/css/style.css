@@ -137,7 +137,6 @@
         align-items: center;
         justify-content: center;
         margin: 40px 0;
-        border-bottom: 1px solid #353560;
         
     }
     
@@ -266,10 +265,11 @@
   /*SOCJAL-LINKI*/
   
     .social-icons {
+        border-top: 1px solid #353560;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        padding: 20px;
     }
 
     .social-icons a {
